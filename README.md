@@ -17,4 +17,4 @@ Download Poli View only from this releases page. Unzip the folder anywhere and r
 
 ## Licence
 
-Free to use, for personal and commercial use. All rights reserved. Do not redistribute modified copies; download Poli View only from its official releases page. Third-party parts are under their own licences (see the `licences` folder in the download).
+Free to use, for personal and commercial use. All rights reserved. Do not redistribute modified copies; download Poli View only from its official releases page. Third-party parts are under their own licences (see [LICENCES.md](LICENCES.md)).
