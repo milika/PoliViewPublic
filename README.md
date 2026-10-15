@@ -10,7 +10,7 @@ Download Poli View only from this releases page. Unzip the folder anywhere and r
 
 ## What it does
 
-- **Pictures:** JPEG (.jpg .jpeg), PNG (.png), BMP (.bmp), GIF (.gif), TIFF (.tif .tiff), ICO (.ico), WebP (.webp), AVIF (.avif), HEIC (.heic), JPEG 2000 (.jp2 .jpf), SVG (.svg), Netpbm (.pbm .pgm .ppm .pnm .pam), HDR .pfm, and .hji. Select a part with the mouse to zoom, copy or crop. Print with a preview.
+- **Pictures:** JPEG (.jpg .jpeg), PNG (.png), BMP (.bmp), GIF (.gif), TIFF (.tif .tiff), ICO (.ico), WebP (.webp), AVIF (.avif), HEIC (.heic), JPEG 2000 (.jp2 .jpf), JPEG XL (.jxl), SVG (.svg), Netpbm (.pbm .pgm .ppm .pnm .pam), HDR .pfm, and .hji. Select a part with the mouse to zoom, copy or crop. Print with a preview.
 - **Video:** whatever FFmpeg plays (.mkv .mp4 .avi .mov .m4v .webm .wmv .flv .mpg .mpeg .ts .m2ts .mts .3gp .ogv), with subtitles (text, ASS, and Blu-ray / DVD picture subtitles), audio track choice and resume where you left off.
 - **Colour:** all colour maths on the light values of the picture itself; HDR in HDR on an HDR screen, fitted to the screen otherwise; an easy display calibration.
 - **Settings:** all in `PoliConfig.ini` beside the program - nothing in the registry.
