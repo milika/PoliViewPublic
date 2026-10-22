@@ -51,7 +51,8 @@ try {
   Copy-Item -Path (Join-Path $source '*') -Destination $Dir -Recurse -Force
 
   if (-not $NoShortcut) {
-    $lnk = Join-Path ([Environment]::GetFolderPath('Programs')) 'Poli View.lnk'
+    # the place and name Poli View itself uses when file types are associated (its Start menu shortcut), so that step replaces this one
+    $lnk = Join-Path ([Environment]::GetFolderPath('StartMenu')) 'PoliView.lnk'
     $sh = New-Object -ComObject WScript.Shell
     $s = $sh.CreateShortcut($lnk)
     $s.TargetPath = $exe
@@ -60,7 +61,7 @@ try {
   }
 
   Write-Host "Poli View $($info.version) is installed in $Dir"
-  Write-Host 'Remove it later: delete that folder and the "Poli View" Start Menu shortcut (nothing is in the registry).'
+  Write-Host 'Remove it later: delete that folder and the "PoliView" Start Menu shortcut (nothing is in the registry).'
   if (-not $NoStart) { Start-Process -FilePath $exe -WorkingDirectory $Dir }
 } finally {
   Remove-Item -Recurse -Force -LiteralPath $tmp -ErrorAction SilentlyContinue

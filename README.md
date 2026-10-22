@@ -10,7 +10,7 @@ Open PowerShell (Windows 10 / 11, 64-bit) and run:
 irm https://raw.githubusercontent.com/milika/PoliViewPublic/main/install.ps1 | iex
 ```
 
-It downloads the newest release from this repository, checks its SHA-256 against the one in the release, unpacks it into `%LOCALAPPDATA%\Programs\PoliView`, adds a "Poli View" Start Menu shortcut and starts Poli View. Run the same line again to update: your `PoliConfig.ini` and `logs\` stay. It needs no administrator rights and writes nothing to the registry. To remove Poli View, delete that folder and the shortcut.
+It downloads the newest release from this repository, checks its SHA-256 against the one in the release, unpacks it into `%LOCALAPPDATA%\Programs\PoliView`, adds a "PoliView" Start Menu shortcut (the one Poli View itself makes when it associates file types - that step replaces it, never duplicates it) and starts Poli View. Run the same line again to update: your `PoliConfig.ini` and `logs\` stay. It needs no administrator rights and writes nothing to the registry. To remove Poli View, delete that folder and the shortcut (after associating file types, also undo them in Poli View first).
 
 Another folder or no start afterwards: `$env:POLIVIEW_DIR = 'D:\Apps\PoliView'` and / or `$env:POLIVIEW_NO_START = '1'` (also `POLIVIEW_NO_SHORTCUT = '1'`) before the line. The script is [install.ps1](install.ps1) - read it before you run it.
 
