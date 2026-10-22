@@ -2,6 +2,18 @@
 
 A portable viewer for pictures and videos in one window - built to be the fastest viewer on Windows that shows colours correctly. HDR pictures and videos are shown right. Nothing is installed: copy the folder anywhere (also a USB stick) and run `PoliView.exe` (64-bit Windows).
 
+## Install in one line
+
+Open PowerShell (Windows 10 / 11, 64-bit) and run:
+
+```powershell
+irm https://raw.githubusercontent.com/milika/PoliViewPublic/main/install.ps1 | iex
+```
+
+It downloads the newest release from this repository, checks its SHA-256 against the one in the release, unpacks it into `%LOCALAPPDATA%\Programs\PoliView`, adds a "Poli View" Start Menu shortcut and starts Poli View. Run the same line again to update: your `PoliConfig.ini` and `logs\` stay. It needs no administrator rights and writes nothing to the registry. To remove Poli View, delete that folder and the shortcut.
+
+Another folder or no start afterwards: `$env:POLIVIEW_DIR = 'D:\Apps\PoliView'` and / or `$env:POLIVIEW_NO_START = '1'` (also `POLIVIEW_NO_SHORTCUT = '1'`) before the line. The script is [install.ps1](install.ps1) - read it before you run it.
+
 ## Download
 
 Newest version: https://github.com/milika/PoliViewPublic/releases
